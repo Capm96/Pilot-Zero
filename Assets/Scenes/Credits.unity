@@ -541,7 +541,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "\nMUSIC BY OBLIDIVM http://oblidivmmusic.blogspot.com.es/ \n\n\n\nSprites:\n\nfree
+  m_text: "\nMUSIC BY OBLIDIVM: \n\nhttp://oblidivmmusic.\nblogspot.com.es/ \n\n\n\nSprites:\n\nfree
     unity particle pack\nkenney space assets\n\n\n\n\nspecial thanks / gameplay:\n\nrick
     davidson &\nben tristem from \nunity 2d c# beginner course\n\n"
   m_isRightToLeft: 0
@@ -590,7 +590,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 19
+  m_firstOverflowCharacterIndex: 21
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -613,12 +613,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 3616746251305963196}
-    characterCount: 211
+    characterCount: 215
     spriteCount: 0
-    spaceCount: 40
+    spaceCount: 43
     wordCount: 30
     linkCount: 0
-    lineCount: 21
+    lineCount: 22
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
