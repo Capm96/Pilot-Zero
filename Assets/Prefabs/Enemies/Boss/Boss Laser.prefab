@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1898864938572490981}
   - component: {fileID: 848590448549426033}
   m_Layer: 11
-  m_Name: L1 Boss Laser
+  m_Name: Boss Laser
   m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 7766385576302846029}
   m_LocalRotation: {x: -1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.008, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0

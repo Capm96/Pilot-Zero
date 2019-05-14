@@ -28,7 +28,7 @@ public class FinalBoss : MonoBehaviour
     [SerializeField] [Range(0, 1)] float deadSFXVolume = 0.75f;
 
     public bool bossAlive = false;
-    private float maxHealth = 25000f;
+    private float maxHealth = 30000f;
     private bool healthBarOn = false;
     GameObject healthBar;
 
@@ -36,7 +36,7 @@ public class FinalBoss : MonoBehaviour
     {
         shotCounter = Random.Range(minTimeBetweenShots, maxTimeBetweenShots);
         healthBar = GameObject.Find("Health Bar");
-        StartCoroutine(SpawnHealthBar());
+        StartCoroutine(SpawnHealthBarAndName());
         healthBarOn = true;
     }
 
@@ -71,9 +71,17 @@ public class FinalBoss : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        DamageDealer damageDealer = other.gameObject.GetComponent<DamageDealer>();
-        if (!damageDealer) { return; }
-        ProcessHit(damageDealer);
+        if (other.gameObject.tag == "Player")
+        {
+            Instantiate(gameObject, transform.position, transform.rotation);
+            return;
+        }
+        else
+        {
+            DamageDealer damageDealer = other.gameObject.GetComponent<DamageDealer>();
+            if (!damageDealer) { return; }
+            ProcessHit(damageDealer);
+        }
     }
 
     private void ProcessHit(DamageDealer damageDealer) 
@@ -106,7 +114,7 @@ public class FinalBoss : MonoBehaviour
         SceneManager.LoadScene("Game Won Story");
     }
 
-    IEnumerator SpawnHealthBar()
+    IEnumerator SpawnHealthBarAndName()
     {
         yield return new WaitForSeconds(2f);
         healthBar.transform.position = new Vector3(0f, 8f, 0f);

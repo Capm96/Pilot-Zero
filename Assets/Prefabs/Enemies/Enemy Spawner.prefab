@@ -70,7 +70,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 840185c4b7bab2b4aa019f2068ed88a9, type: 2}
   - {fileID: 11400000, guid: c41d8030ba8e44a4daaf1d7b89bc6de1, type: 2}
   - {fileID: 11400000, guid: c18729ef7b1e30b4d860419f8d53e6dc, type: 2}
-  startingWave: 0
+  startingWave: 25
   looping: 0
   waveWaitTime: 5
   enemiesAlive: 1
