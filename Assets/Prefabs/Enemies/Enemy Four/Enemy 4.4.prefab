@@ -110,7 +110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1600
   enemyKillScore: 750
-  projectile: {fileID: 7766385576302846029, guid: b4fad4cd9b06dc0458a859097cc9cafa,
+  projectile: {fileID: 7766385576302846029, guid: 298fdcc8423af1c4a8e2bd104752c828,
     type: 3}
   explosionParticles: {fileID: 1828176872806910, guid: 64891a0eb28db934898420d80ca07cb3,
     type: 3}
