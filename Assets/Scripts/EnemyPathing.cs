@@ -7,11 +7,9 @@ public class EnemyPathing : MonoBehaviour
     // Establishes pathing for enemies follow.
     // Pathing is based on a list of target waypoints set in the game engine.
 
-    // Configuration parameters.
     WaveConfig waveConfig;
     List<Transform> waypoints;
 
-    // Declare variables.
     int waypointsIndex = 0;
     bool didPlayerDie;
 

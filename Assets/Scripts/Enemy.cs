@@ -6,7 +6,6 @@ public class Enemy : MonoBehaviour
     // Contains the essential data container for enemy information.
     // Contains main methods associated with enemies.
 
-    // Configuration Parameters.
     [Header("Enemy Stats")]
     [SerializeField] int health = 100;
     [SerializeField] int enemyKillScore = 150;
@@ -65,6 +64,7 @@ public class Enemy : MonoBehaviour
     private void ProcessHit(DamageDealer damageDealer) // Subtract damage from health until it reaches 0 -- initiating death method.
     {
         damageDealer.Hit();
+
         health -= damageDealer.GetDamage();
         if (health <= 0)
         {
@@ -76,7 +76,9 @@ public class Enemy : MonoBehaviour
     {
         FindObjectOfType<GameSession>().AddToScore(enemyKillScore);
         FindObjectOfType<GameSession>().AddToEnemiesKilled();
+
         Destroy(gameObject);
+
         GameObject explosion = Instantiate(explosionParticles, transform.position, transform.rotation) as GameObject;
         AudioSource.PlayClipAtPoint(deadSFX, Camera.main.transform.position, fireSFXVolume);
         Destroy(explosion, explosionDuration);

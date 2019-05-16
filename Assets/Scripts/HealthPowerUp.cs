@@ -6,7 +6,6 @@ public class HealthPowerUp : MonoBehaviour
 {
     // Health power up script. Functionally equivalent to all other power up scripts.
     
-    // Configuration Parameters
     [SerializeField] int healthIncrease = 300;
     [SerializeField] GameObject PowerUpEffect;
 

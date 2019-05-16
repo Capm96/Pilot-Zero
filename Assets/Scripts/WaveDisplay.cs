@@ -16,6 +16,9 @@ public class WaveDisplay : MonoBehaviour
 
     void Update()
     {
-        waveText.text = gameSession.GetWave().ToString();
+        int currentWave = gameSession.GetWave();
+        int realWaveValue = currentWave + 1; // Our Enemy Wave Spawner starts counting from zero, so we have to add one. 
+
+        waveText.text = realWaveValue.ToString();
     }
 }

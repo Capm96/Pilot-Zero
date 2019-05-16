@@ -6,12 +6,8 @@ public class PowerUpGenerator : MonoBehaviour
 {
     // Enables an empty game object to randomly instantiate the powerups.
 
-    // Configuration parameters.
     [SerializeField] List<GameObject> powerups;
     [SerializeField] float waitTimeBetweenPowerups = 60f;
-
-    // Declare variables.
-    Vector3 randomPosition;
 
     void Start()
     {

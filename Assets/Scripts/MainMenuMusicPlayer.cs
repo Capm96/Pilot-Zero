@@ -3,14 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuMusicPlayer : MonoBehaviour 
 {
-    Scene scene;
-    int health;
-    string currentScene;
+    // Sets up singleton method for music player during main menu.
 
-    void Awake()
-    {
-        SetUpingleton();
-    }
+    string currentScene;
 
     void Start()
     {
@@ -29,7 +24,6 @@ public class MainMenuMusicPlayer : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
         else
         {
             DontDestroyOnLoad(gameObject);

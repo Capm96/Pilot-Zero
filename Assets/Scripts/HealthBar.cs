@@ -7,17 +7,7 @@ public class HealthBar : MonoBehaviour
     [SerializeField] GameObject bar;
     [SerializeField] GameObject barDisplay;
 
-    // Start is called before the first frame update
-    void Awake()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
-    public void SetSize(float sizeNormalized)
+    public void SetSize(float sizeNormalized) // Reduces size of the Boss' health bar to a scale between 0 and 1 (0% to 100% full).
     {
         bar.transform.localScale = new Vector2(sizeNormalized, 1f);
         UpdateColor(sizeNormalized);

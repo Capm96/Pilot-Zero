@@ -4,7 +4,6 @@ public class BackgroundScroller : MonoBehaviour
 {
     // Scrolls background image based on a variable input speed.
 
-    // Configuration parameters.
     [SerializeField] float backgroundScrollSpeed = 0.5f;
 
     Material myMaterial;

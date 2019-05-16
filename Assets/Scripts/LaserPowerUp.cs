@@ -4,8 +4,8 @@ public class LaserPowerUp : MonoBehaviour
 {
     // Laser projectile damage power up script. Functionally equivalent to all other power up scripts.
 
-    // Configuration Parameters
-    [SerializeField] float projectileSpeedIncrease = 1.15f;
+    [SerializeField] int projectileDamageIncrease = 25;
+    [SerializeField] float laserSpriteScaleIncrease = 0.80f;
     [SerializeField] GameObject PowerUpEffect;
 
     void OnTriggerEnter2D(Collider2D other)
@@ -21,7 +21,7 @@ public class LaserPowerUp : MonoBehaviour
         GameObject effect = Instantiate(PowerUpEffect, transform.position, transform.rotation);
 
         Player playerCharacter = player.GetComponent<Player>();
-        playerCharacter.LaserUpgrade(25, 0.80f);
+        playerCharacter.LaserUpgrade(projectileDamageIncrease, laserSpriteScaleIncrease);
 
         Destroy(gameObject);
     }

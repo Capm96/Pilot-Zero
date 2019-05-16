@@ -13,6 +13,7 @@ public class ShotsFired : MonoBehaviour
     void Start()
     {
         scoreText = GetComponent<Text>();
+
         gameSession = FindObjectOfType<GameSession>();
     }
 

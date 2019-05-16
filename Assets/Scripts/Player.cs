@@ -7,7 +7,6 @@ public class Player : MonoBehaviour
     // Main player script.
     // Contains all methods and attributes concerning the main character's gameplay.
     
-    // Configuration parameters.
     [Header("Player")]
     [SerializeField] GameObject playerLaser;
     [SerializeField] GameObject playerCharacter;
@@ -29,7 +28,6 @@ public class Player : MonoBehaviour
     [SerializeField] AudioClip powerUpSFX;
     [SerializeField] [Range(0, 1)] float powerUpSFXVolume = 0.75f;
 
-    // Declare variables.
     Coroutine firingCoroutine;
 
     float xMin, xMax, yMin, yMax;
@@ -133,6 +131,7 @@ public class Player : MonoBehaviour
     {
         damageDealer.Hit();
         health -= damageDealer.GetDamage();
+
         if (health <= 0)
         {
             isPlayerDead = true;

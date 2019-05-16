@@ -3,13 +3,15 @@ using UnityEngine.SceneManagement;
 
 public class StoryGameLoader : MonoBehaviour
 {
-    // Allows player to skip game story scene.
+    // Allows player to skip the game stories by pressing the space key.
 
     void Update()
     {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
         if (Input.GetKeyDown("space"))
         {
-            SceneManager.LoadScene("Game");
+            SceneManager.LoadScene(currentSceneIndex + 1);
         }
     }
 }

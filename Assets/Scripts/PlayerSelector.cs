@@ -32,7 +32,7 @@ public class PlayerSelector : MonoBehaviour
         heavy = GameObject.Find("PHeavy");
     }
 
-    public void RightChooseShipButton()
+    public void RightChooseShipButton() // This and the "LeftChooseShipButton" switch between ship types.
     {
         currentShipIndex++;
         if (currentShipIndex > 2)
@@ -100,7 +100,7 @@ public class PlayerSelector : MonoBehaviour
         DisplayShipName();
     }
 
-    public void RightColorButton()
+    public void RightColorButton() // This and "LeftColorButton" switch between current ship's color.
     {
         if (currentShipIndex == 0)
         {

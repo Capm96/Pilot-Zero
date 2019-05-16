@@ -6,7 +6,6 @@ public class MSPowerUp : MonoBehaviour
 {
     // Movement speed power up script. Functionally equivalent to all other power up scripts.
 
-    // Configuration Parameters
     [SerializeField] float moveSpeedIncrease = 1.15f;
     [SerializeField] GameObject PowerUpEffect;
 

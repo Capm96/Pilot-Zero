@@ -4,7 +4,6 @@ public class GameSession : MonoBehaviour
 {
     // The GameSession script is primarily responsible for carrying the score and wave numbers throughout the scenes in the game.
 
-    // Declare initial variables.
     int score = 0;
     int waveNumber = 0;
     int shotsFired = 0;

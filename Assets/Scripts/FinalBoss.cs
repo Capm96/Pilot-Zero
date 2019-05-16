@@ -7,7 +7,6 @@ public class FinalBoss : MonoBehaviour
     // Final boss script, which is a recycled version of the normal enemy script.
     // Primary difference are within the changes in main attributes & the instantiation of multiple lasers at once.
 
-    // Configuration Parameters.
     [Header("Enemy Stats")]
     [SerializeField] int health = 100;
     [SerializeField] int enemyKillScore = 150;
@@ -27,7 +26,6 @@ public class FinalBoss : MonoBehaviour
     [SerializeField] AudioClip deadSFX;
     [SerializeField] [Range(0, 1)] float deadSFXVolume = 0.75f;
 
-    public bool bossAlive = false;
     private float maxHealth = 30000f;
     private bool healthBarOn = false;
     GameObject healthBar;
@@ -73,7 +71,7 @@ public class FinalBoss : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            Instantiate(gameObject, transform.position, transform.rotation);
+            Instantiate(gameObject, transform.position, transform.rotation); // Collisions with players just freeze the boss in place.
             return;
         }
         else
@@ -87,6 +85,7 @@ public class FinalBoss : MonoBehaviour
     private void ProcessHit(DamageDealer damageDealer) 
     {
         damageDealer.Hit();
+
         health -= damageDealer.GetDamage();
         if (health <= 0)
         {
@@ -97,18 +96,21 @@ public class FinalBoss : MonoBehaviour
     private void Die() 
     {
         FindObjectOfType<GameSession>().AddToScore(enemyKillScore);
-        bossAlive = true;
-        StartCoroutine(GameWon());
+
         GameObject explosion = Instantiate(explosionParticles, transform.position, transform.rotation) as GameObject;
+
         GetComponent<SpriteRenderer>().enabled = false;
         transform.position = new Vector2(500f, 500f);   
+
         AudioSource.PlayClipAtPoint(deadSFX, Camera.main.transform.position, fireSFXVolume);
         Destroy(explosion, explosionDuration);
+
         healthBar.transform.position = new Vector3(0f, 8f, 2f);
+
         StartCoroutine(GameWon());
     }
 
-    IEnumerator GameWon() // Loads game won screen after the boss is dead.
+    IEnumerator GameWon()
     {
         yield return new WaitForSeconds(4f);
         SceneManager.LoadScene("Game Won Story");

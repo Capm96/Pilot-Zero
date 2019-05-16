@@ -6,7 +6,6 @@ public class EnemySpawner : MonoBehaviour
 {
     // Declares main methods associated with spawning enemies.
 
-    // Configuration parameters.
     [SerializeField] List<WaveConfig> waveConfigs;
     [SerializeField] int startingWave = 0;
     [SerializeField] bool looping = false;

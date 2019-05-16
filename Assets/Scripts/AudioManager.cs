@@ -22,6 +22,7 @@ public class AudioManager : MonoBehaviour
     void Start()
     {
         StartCoroutine(PlayNormalMusic());
+
         gameSession = FindObjectOfType<GameSession>();
     }
 

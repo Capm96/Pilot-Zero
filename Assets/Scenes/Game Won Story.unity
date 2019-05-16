@@ -127,7 +127,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9199181}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63e29892bbca5f740b01dc6a132af4ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b4b809f261f6ce4abbdb9b5dae86891, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &780873147
@@ -288,57 +288,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skip Button
       objectReference: {fileID: 0}
-    - target: {fileID: 831653374910659337, guid: 5381cb3209acdfc4abe536328ab23f94,
-        type: 3}
-      propertyPath: m_Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 831653374910659337, guid: 5381cb3209acdfc4abe536328ab23f94,
-        type: 3}
-      propertyPath: m_FontData.m_LineSpacing
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 831653374910659337, guid: 5381cb3209acdfc4abe536328ab23f94,
-        type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 831653374910659337, guid: 5381cb3209acdfc4abe536328ab23f94,
-        type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 831653374910659337, guid: 5381cb3209acdfc4abe536328ab23f94,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 6cd01cc975b1fff46b062926497ffb03,
-        type: 3}
-    - target: {fileID: 831653374910659342, guid: 5381cb3209acdfc4abe536328ab23f94,
-        type: 3}
-      propertyPath: text
-      value: And so time unfolded... the journey into the ether was a perilous one
-        but there was hope - for you carried great skill and courage. Baldur and his
-        evil forces have been defeated and the princess has returned home safely.
-        On your arrival the king arranged a celebration in honor of your mission.
-        Thousands showed up. At the end of the event, he turns to you and says "I
-        could live a thousand lives and not be able to express how thankful I am to
-        you. The kingdom is mine by law but yours by merit -- anything you wish will
-        be done." "Thank you, your majesty" You reply. "But I need not of any wish,
-        for the kindness the empire has given me is greater than any gift."  You leave
-        the event and go home to rest. That night the empire slept peacefully as it
-        did for the next thousand years -- thanks to you.
-      objectReference: {fileID: 0}
-    - target: {fileID: 831653374910659342, guid: 5381cb3209acdfc4abe536328ab23f94,
-        type: 3}
-      propertyPath: timeLapse
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 831653374910659342, guid: 5381cb3209acdfc4abe536328ab23f94,
-        type: 3}
-      propertyPath: timeCounter
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 831653375788647899, guid: 5381cb3209acdfc4abe536328ab23f94,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -443,6 +392,57 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 831653374910659337, guid: 5381cb3209acdfc4abe536328ab23f94,
+        type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 831653374910659337, guid: 5381cb3209acdfc4abe536328ab23f94,
+        type: 3}
+      propertyPath: m_FontData.m_LineSpacing
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 831653374910659337, guid: 5381cb3209acdfc4abe536328ab23f94,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 831653374910659337, guid: 5381cb3209acdfc4abe536328ab23f94,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831653374910659337, guid: 5381cb3209acdfc4abe536328ab23f94,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 6cd01cc975b1fff46b062926497ffb03,
+        type: 3}
+    - target: {fileID: 831653374910659342, guid: 5381cb3209acdfc4abe536328ab23f94,
+        type: 3}
+      propertyPath: text
+      value: And so time unfolded... the journey into the ether was a perilous one
+        but there was hope - for you carried great skill and courage. Baldur and his
+        evil forces have been defeated and the princess has returned home safely.
+        On your arrival the king arranged a celebration in honor of your mission.
+        Thousands showed up. At the end of the event, he turns to you and says "I
+        could live a thousand lives and not be able to express how thankful I am to
+        you. The kingdom is mine by law but yours by merit -- anything you wish will
+        be done." "Thank you, your majesty" You reply. "But I need not of any wish,
+        for the kindness the empire has given me is greater than any gift."  You leave
+        the event and go home to rest. That night the empire slept peacefully as it
+        did for the next thousand years -- thanks to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 831653374910659342, guid: 5381cb3209acdfc4abe536328ab23f94,
+        type: 3}
+      propertyPath: timeLapse
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 831653374910659342, guid: 5381cb3209acdfc4abe536328ab23f94,
+        type: 3}
+      propertyPath: timeCounter
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7388665603577727013, guid: 5381cb3209acdfc4abe536328ab23f94,
         type: 3}

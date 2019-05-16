@@ -4,7 +4,6 @@ public class FSPowerUp : MonoBehaviour
 {
     // Fire speed power up script.
 
-    // Configuration parameters.
     [SerializeField] float fireSpeedIncrease = 1.30f;
     [SerializeField] GameObject PowerUpEffect;
 

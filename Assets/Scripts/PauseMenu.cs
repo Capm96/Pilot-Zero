@@ -6,7 +6,6 @@ public class PauseMenu : MonoBehaviour
 {
     // Creates methods for interaction during the pause menu throughout the main gameplay.
 
-    // Configuration parameters.
     public GameObject PauseMenuUI;
     public GameObject InstructionsUI;
     public GameObject sprites;

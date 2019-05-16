@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class Spinner : MonoBehaviour
 {
-    // Gives rotation to lasers.
+    // Gives rotation to certain enemies' lasers.
 
-    // Configuration parameters.
     [SerializeField] float speedOfSpin = 1f;
 
     void Update()

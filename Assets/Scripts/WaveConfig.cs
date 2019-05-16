@@ -8,7 +8,6 @@ public class WaveConfig : ScriptableObject
 {
     // Primary script passing on the values and methods within the scriptable objects of enemy waves.
     
-    // Configuration parameters.
     [SerializeField] GameObject enemyPrefab;
     [SerializeField] GameObject pathPrefab;
     [SerializeField] float timeBetweenSpawns = 0.5f;
