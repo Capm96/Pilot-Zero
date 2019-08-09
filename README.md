@@ -17,7 +17,7 @@ However, I had a lot of fun building the game and after the module was done ther
 * And more!
 
 ## Play the game!
-If you'd like to try it out, you can play the game by [clicking here.](https://www.sharemygame.com/share/0ce0cda9-39a2-421e-b4ed-35eb3bf763bf)
+If you'd like to try it out, you can play the game by [clicking here.](https://www.sharemygame.com/share/c63734b8-c740-418e-a56b-664604e1f20c)
 
 ## Demo Screenshots
 
